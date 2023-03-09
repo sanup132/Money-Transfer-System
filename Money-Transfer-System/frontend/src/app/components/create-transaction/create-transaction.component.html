@@ -1,0 +1,33 @@
+<div>
+    <div class="container">
+        <div class="row">
+            <div class="submit-form mx-auto mb-4 p-5 border border-primary border-1 rounded-5" style="width: 500px;">
+                <h1 class="text-center text-primary"><b>Make Payment</b></h1>
+                <h1 class="text-center text-primary" style="font-size: 35px;"><b>-</b></h1>
+                <form (ngSubmit)="createTransaction()" [formGroup]="transactionForm">
+                    <div class="form-group">
+                        <label for="name">Payee Name: </label>
+                        <select formControlName="name" id="name">
+                            <option *ngFor="let payee of payees" value={{payee}}>{{payee.name}}</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="amount">Amount</label>
+                        <input class="form-control" id="amount" required formControlName="amount" />
+                    </div>
+                    <div class="form-group">
+                        <label for="remarks">Remarks</label>
+                        <input class="form-control" id="remarks" required formControlName="remarks" />
+                    </div>
+
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="">
+        <app-footer></app-footer>
+    </div>
+</div>
