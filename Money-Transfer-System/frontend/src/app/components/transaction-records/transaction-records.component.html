@@ -1,0 +1,66 @@
+<div class="container-fluid px-0 py-3">
+    <div class="row">
+        <form style="width: 800px;" class="mx-auto mb-4 p-5 border border-primary border-1 rounded-5">
+            <h1 class="text-center text-primary" style="font-size: 35px;"><b>Statements</b></h1>
+            <h1 class="text-center text-primary" style="font-size: 35px;"><b>-</b></h1>
+
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Statements
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="#">top 10 transaction</a></li>
+                            <li><a class="dropdown-item" href="#">Current month transaction</a></li>
+                            <li><a class="dropdown-item" href="#">3 month transaction</a></li>
+                            <li><a class="dropdown-item" href="#"> between date range</a></li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <form>
+                        <button class="btn btn-secondary mb-3" type="button">Between Date Range</button>
+                        <div class="mb-3">
+                            <label for="from-date" class="form-label">From</label>
+                            <input type="date" class="form-control" id="from-date">
+                        </div>
+                        <div class="mb-3">
+                            <label for="to-date" class="form-label">To</label>
+                            <input type="date" class="form-control" id="to-date">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" style="margin-bottom: 0px;" type="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    File Format
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">jpg</a></li>
+                    <li><a class="dropdown-item" href="#">pdf</a></li>
+                    <li><a class="dropdown-item" href="#">json</a></li>
+                    <li><a class="dropdown-item" href="#">xml</a></li>
+
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+
+                </ul>
+            </div>
+
+        </form>
+    </div>
+    <div class="">
+        <app-footer></app-footer>
+    </div>
+</div>
